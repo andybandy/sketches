@@ -1,5 +1,5 @@
-int w = 640;
-int h = 480;
+int w = 800;
+int h = 600;
 int frame = 0;
 int c = 0;
 int s = 20;
@@ -24,6 +24,8 @@ void draw() {
   if (c > 255) {
     c = 0;
   }
+  color clr = color(c, map(mouseX, 0, width, 0, 255), map(mouseY, 0, height, 0, 255));
+  // stroke(clr);
   stroke(c);
   if (frame%2 == 0) {
     PVector p1 = new PVector(p.x + path0.x, p.y + path0.y);
