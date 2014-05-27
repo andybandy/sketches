@@ -74,3 +74,9 @@ void draw() {
     path3.rotate(QUARTER_PI);
   }
 }
+
+void keyPressed() {
+  if (keyCode == ENTER) {
+    saveFrame("screen.png");
+  }
+}
